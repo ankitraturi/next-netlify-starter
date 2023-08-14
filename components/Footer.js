@@ -1,10 +1,13 @@
 import styles from './Footer.module.css'
 
+const currentdate = new Date();
+const year = currentdate.getFullYear();
+
 export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
+        &copy; {year} ankitraturi.com
       </footer>
     </>
   )

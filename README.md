@@ -24,8 +24,6 @@ This project is a very minimal starter that includes 2 sample components, a glob
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -42,8 +40,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 **Option two:** Manual clone
 
 1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
+2. Navigate to the directory and run `yarn`
+3. Run `yarn dev`
 4. Make your changes
 5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
 
@@ -80,11 +78,11 @@ For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testin
 If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
 
 ```bash
-npm uninstall -D netlify-plugin-cypress
+yarn remove netlify-plugin-cypress
 ```
 
 And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
 
 ```bash
-npm uninstall -S cypress
+yarn remove cypress
 ```
